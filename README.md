@@ -38,6 +38,8 @@ You can make requests to the API using curl on the command line or from any API 
 The following outline indicates requirements for each endpoint:
 
 * `GET /messages`
+* `GET /message/:id`
+  * provide a specific message ID to get the message back 
 * `POST /message` 🔒
   * Include a request __Body__ with a property named `message`
 * `PUT /message` 🔒
@@ -48,7 +50,6 @@ The following outline indicates requirements for each endpoint:
 🔒 For endpoints requiring auth:
 * Include your admin key value from the `.env` in a request header named `admin_key`.
 
-![Glitch](https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2FLogo_Color.svg?v=1602781328576)
 
 ## You built this with Glitch!
 
